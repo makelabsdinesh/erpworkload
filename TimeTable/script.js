@@ -4,6 +4,7 @@ const uploadButton = document.getElementById('uploadButton');
 const submitButton = document.getElementById('submit');
 let selectedFiles = [];
     
+// bulk upload
 fileInput.addEventListener('change', function () {
     selectedFiles = Array.from(fileInput.files);
     if (selectedFiles.length > 0) {
