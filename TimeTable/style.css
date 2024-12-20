@@ -1,23 +1,27 @@
-.TimeTable{
+.TimeTable {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.cards-1{
+
+.cards-1 {
     width: 80%;
     padding: 10vh 0vh;
-    
+
 }
-.cards-1 h1{
+
+.cards-1 h1 {
     font-size: 5.5vh;
 
 }
-.cards-1 p{
+
+.cards-1 p {
     font-size: 3vh;
     padding: 1vh 0vh;
 }
+
 .upload-container {
     background-color: #fff;
     padding: 40px;
@@ -135,7 +139,7 @@
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background-color:#3498db;
+    background-color: #3498db;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -151,4 +155,3 @@
 .submit-btn:active {
     background-color: #2268be;
 }
-
