@@ -1,0 +1,312 @@
+/* General Styles */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+header nav span {
+  color: #555;
+}
+
+/* Table Controls */
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.table-controls .entries,
+.table-controls .search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-controls .add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.table-controls input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Table Styling */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+
+.task-table th {
+  background-color: #f8f9fa;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.status.completed {
+  background-color: #28a745;
+}
+
+.status.delayed {
+  background-color: #dc3545;
+}
+
+.status.pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-controls button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination-controls button:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .table-controls .entries,
+  .table-controls .search,
+  .table-controls .add-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .task-table th,
+  .task-table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .user-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination-controls button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+
+  /* Scrollable Table for Mobile */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .task-table {
+    min-width: 600px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-controls .entries,
+  .table-controls .search,
+  .table-controls .add-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .task-table th,
+  .task-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .task-table th {
+    font-size: 1rem;
+  }
+
+  .user-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .pagination-controls button {
+    padding: 7px 14px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .table-controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .task-table th,
+  .task-table td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .pagination {
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+
+  .pagination-controls button {
+    padding: 8px 16px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  .task-table th,
+  .task-table td {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}

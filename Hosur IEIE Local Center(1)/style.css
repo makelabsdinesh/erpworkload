@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script&family=Pacifico&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'arial' sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 1vh;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(245, 237, 237);
+    border-radius: 1.5vh;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #3298db;
+    border-radius: 2vh;
+}
+
+#home{
+    background-color: #3298db;
+    border-radius: 1.5vh;
+    color: white;
+}
+
+.centre-logo{
+    width: 100%;
+    padding: 2vh 0vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+}
+.centre-logo img{
+    height: 10vh;
+    width: auto;
+}
+.centre-logo h2{
+    margin-top: 2vh;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+
+.nav-1{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 1vh 0.5vh;
+    background-color: #000;
+    border: 1px solid rgb(186, 185, 185);
+    
+}
+.nav-1 a:hover{
+   border: 1px solid rgb(194, 191, 191);
+   background-color: #3298db;
+   font-weight: bold;
+   border-radius: 0.8vh;
+}
+.nav-1 a{
+    width: 80%;
+    text-decoration: none;
+    color:#f4f4f4;
+    padding: 1vh 0;
+    font-weight: 500;
+    margin: 5px 5px 10px 10px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2vh;
+}
+
+.img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#image-1{
+    width:100%;
+    height: 100%;
+}
+
+
+.card-1{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vh 0vh;
+    background-color: rgb(204, 203, 203);
+}
+.box-1{
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#img-size{
+    width: 60%;
+    border: 1vh solid rgb(192, 191, 191);
+    border-radius: 0.5vh;
+}
+.slider {
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 1vh;
+  }
+
+
+.para-1{
+    padding: 2vh;
+    line-height: 3vh;
+    font-size: 2.3vh;
+    margin-top: 0vh;
+    text-align: center;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    background-color: rgb(240, 239, 239);
+    color: black;
+}
+.para-1 a{
+    text-decoration: none;
+    color: black;
+    font-family: "Caveat", serif;
+    font-weight: 800;
+    font-size: 3.3vh;
+    
+}
+.para-1 a:hover{
+    color: #3298db;
+}
+.para-1 p{
+    text-align:justify;
+    text-indent: 5vh;
+}
+
+#btn-1{
+    background: #3298db;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 2vh;
+    font-weight: 500;
+    padding: 1vh 3vh;
+    height: 6vh;
+    width: 30vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+#btn-1:hover{
+    background-color: #2988c7;
+}
+
+
+.card-2{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(217, 215, 232);
+    
+}
+.box-2{
+    width: 80%;
+    border-radius: 2vh;
+    text-align: left;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+#image-3{
+    border-top-left-radius: 3vh;
+    width: 80%;
+    height: 100%;
+}
+.para-2{
+    padding: 2vh;
+    line-height: 3vh;
+    font-size: 2.3vh;
+    color: black;
+    background-color: rgb(240, 239, 239);
+}
+.para-2 a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 3vh;
+    color: black;
+    font-family: "Caveat", serif;
+}
+.para-2 p{
+    text-align:justify;
+    text-indent: 5vh;
+}
+#btn-1{
+    background: #3298db;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 2vh;
+    font-weight: 600;
+    padding: 1vh 3vh;
+    height: 6vh;
+    width: 30vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+
+.staffs{
+    width: 100%;
+    background-color: rgb(246, 244, 244);
+    display:flex;
+    padding:2vh 1vh;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.card-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    
+}
+.pic-1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    box-shadow: 0.2vh 0.1vh 0.3vh 0.2vh rgb(225, 224, 224);
+    
+}
+.pic-2{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    box-shadow: 0.2vh 0.1vh 0.3vh 0.2vh rgb(236, 235, 235);
+    
+}
+.pic-3{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    box-shadow: 0.2vh 0.1vh 0.3vh 0.2vh rgb(236, 234, 234);
+}
+.pic-1 img{
+    width: 35vh;
+    height: 40vh;
+    
+}
+.pic-2 img{
+    width: 35vh;
+    height: 40vh;
+}
+.pic-3 img{
+    width: 35vh;
+    height: 40vh;
+}
+
+.pic-1 h1{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 2.8vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(73, 185, 229);
+    font-weight: 700;
+}
+.pic-1 p{
+    color: rgb(53, 160, 203);
+    margin-bottom: 3.5vh;
+}
+.pic-2 h1{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 2.8vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(73, 185, 229);
+    font-weight: 700;
+}
+.pic-2 p{
+    color: rgb(53, 160, 203);
+    margin-bottom: 3.5vh;
+}
+.pic-3 h1{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 2.8vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(73, 185, 229);
+    font-weight: 700;
+}
+.pic-3 p{
+    color: rgb(53, 160, 203);
+    margin-bottom: 3.5vh;
+}
+
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(59, 193, 146, 0.66);
+}
+#image-4{
+    width: 30vh;
+    height: 20vh;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    padding: 1vh;
+    justify-content: center;
+}
+.forms h1{
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+    font-size: 3vh;
+    color: white;
+    font-weight: 500;
+}
+.forms label{
+    font-size: 2.3vh;
+    margin-left: 2vh;
+    margin-bottom: 1.5vh;
+    color: white;
+}
+.forms input{
+    margin-left: 2vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 6vh;
+    font-size: 2.2vh;
+    font-weight: 500;
+    border-radius: 1vh;
+    border: 1px solid white;
+
+}
+
+#message{
+    height: 8vh;
+}
+.forms button{
+    margin-left: 2vh;
+}
+.forms p{
+    margin-left: 2vh;
+}
+
+#btn-2{
+    background-color:black ;
+    color: white;
+    border: 1px solid black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2.5vh;
+    font-weight: 700;
+    padding: 1vh 2vh;
+    height: 6vh;
+    width: 25vh;
+    font-size: 2.2vh;
+    cursor: pointer;
+}
+.forms p{
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    font-size: 2.5vh;
+    margin: 0px;
+}
+.footer .split p{
+padding: 2vh;
+margin-bottom: 0px;
+}
+
+
+
+@media(max-width:1100px){
+
+    body{
+        width: 100%;
+    }
+    .nav-1{
+        display: none;
+    }
+    .nav a{
+        display: none;
+    }
+    .centre-logo img{
+        height: auto;
+        width:100%;
+    }
+    .staffs{
+        width: 100%;
+    }
+    .card-3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic-1{
+        margin: 5vh 0vh;
+    }
+    .pic-2{
+        margin: 5vh 0vh;
+    }
+    .pic-3{
+        margin: 5vh 0vh;
+    }
+}
+
+
+
+                                  /*Membership CSS*/
+
+
+                          
+    #member{
+        background-color: #3298db;
+        border-radius: 2vh;
+        color: white;
+    }
+    
+    .box-member{
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-content: center;
+        margin-top: 2vh;
+        background-color: rgb(242, 241, 241);
+    }
+    .div-1 ul{
+        list-style: none;
+    }
+    .div-1{
+        position: fixed;
+        margin-left: 2vh;
+        margin-top: 2vh;
+        transform: translate(-650px);
+    }
+    .div-1 li{
+        border: 1px solid black;
+        padding: 2vh;
+        background-color:rgb(211, 209, 209);
+        border-radius: 0.5vh;
+        margin: 1vh;
+        
+    }
+    .div-1 li:hover{
+        background-color: #3298db;
+        color: white;
+    }
+    .div ul,li a{
+        text-decoration: none;
+    }
+    .div-1 li a:hover{
+        background-color: #3298db;
+        color: white;
+
+    }
+.card-member-1{
+    width: 65%;
+    padding: 2vh;
+    justify-content: center;
+    align-content: center;
+    } 
+
+    .Benefits, .Grades-membership, 
+    .Status-of-Application,
+     .Chartered-engineer, .Practicing,
+      .Career-Advancement, .Institutional-Membership{
+        border: 1.5px solid rgb(226, 225, 225);
+        border-radius: 1vh;
+        padding: 1.5vh;
+        border-top:2vh solid #3298db ;
+        margin: 3vh 2vh;
+        background-color: whitesmoke;
+    }
+    
+    .Benefits p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Grades-membership p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Status-of-Application p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Chartered-engineer p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Practicing p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Career-Advancement p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .Institutional-Membership p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    
+    #img-1{
+        width: 100%;
+    }
+    
+
+    /* ------------------------------academic-page---------------------- */
+
+
+
+    #academic{
+        background-color: #3298db;
+        border-radius: 1.5vh;
+        color: white;
+    }
+    .box-member{
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-content: center;
+        margin-top: 2vh;
+        background-color: rgb(242, 241, 241);
+    }
+    .div-2 ul{
+        list-style: none;
+    }
+    .div-2{
+        position: fixed;
+        margin-left: 2vh;
+        margin-top: 2vh;
+        transform: translate(-630px);
+    }
+    .div-2 li{
+        border: 1px solid grey;
+        padding: 1vh;
+        background-color:rgb(211, 209, 209);
+        border-radius: 0.5vh;
+        margin: 1vh;
+        
+    }
+    .div-2 li:hover{
+        background-color: #3298db;
+        color: white;
+    }
+    .div-2 ul,li a{
+        text-decoration: none;
+    }
+    .div-2 li a:hover{
+        background-color: #3298db;
+        color: white;
+
+    }
+    .card-member-2{
+        width: 65%;
+        padding: 2vh;
+        margin-left: 10vh;
+        justify-content: center;
+        align-content: center;
+        }
+
+        .Academic-Programme, .IEI-Accreditation,
+         .IEI-Recognitions,
+          .Engineering-Disciplines, .Eligibility-Criteria, .Fee-Structure{
+        border: 1.5px solid rgb(220, 217, 217);
+        border-radius: 1vh;
+        padding: 1.5vh;
+        margin: 3vh 2vh;
+        border-top:2vh solid #3298db ;
+        background-color: whitesmoke;
+    }
+
+.IEI-Recognitions{
+    padding: 2vh;
+}
+    .Academic-Programme p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .IEI-Accreditation p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .IEI-Recognitions p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+    .IEI-Recognitions button{
+        width: 15%;
+        padding: 1vh;
+        background: #3298db;
+        color: #f4f4f4;
+        border-radius: .5vh;
+    }
+    .IEI-Recognitions button:hover{
+        background-color: grey;
+    }
+    .Eligibility-Criteria p{
+        text-indent: 5vh;
+        text-align: justify;
+    }
+img{
+    width: 100%;
+}
+
+/* ---------------------------certification------------------------------- */
+
+#certificate{
+    background-color: #3298db;
+    border-radius: 1.5vh;
+    color: white;
+}
+.contains{
+   align-content: center;
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   flex-wrap: wrap;
+   background-color: rgb(246, 242, 242);
+   
+}
+.course-1{
+    width:20%;
+    padding: 30px;
+    border-radius: 1vh;
+    display: flex; 
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(220, 218, 218);
+    border-top: 2vh solid #3298db;
+    background-color:white;
+}
+.course-1 img{
+    width: 70%;
+}
+.course-1 h2{
+    font-size: 3vh;
+}
+.course-1 p{
+    text-align: justify;
+}
+.course-1 button{
+    background-color: white;
+    padding: 1.6vh;
+    border-radius: 0.5vh;
+}
+.course-1 button:hover{
+    background-color: rgb(111, 110, 110);
+    color: white;   
+}
+/*----------------------commitee members----------------------------*/
+.commitee-members{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 236, 236);
+}
+#commitee-mem{
+    background-color: #3298db;
+    color: white;
+    border-radius: 1vh;
+
+}
+.chairman{
+    margin-top: 50px;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    transform: translateX(350px);
+    border-radius: 1vh;
+}
+.chairman h1{
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.chairman img{
+    height: 50%;
+    width: 50%;
+    box-shadow: .5vh .5vh .5vh  #80808095;
+}
+.chairman h3{
+    font-size: 54px;
+    margin-top: 10px;
+}
+.other-members{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.member{
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 1vh;
+    background-color: white;
+    box-shadow: .5vh .5vh .5vh #80808095;
+}
+.member img{
+    border-radius: 1vh;
+}
+.member h3{
+    margin-top: 5px;
+    font-size: 32px;
+}
+.member h4{
+    font-size: 24px;
+}

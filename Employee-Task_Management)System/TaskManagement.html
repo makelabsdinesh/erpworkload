@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="TaskManagement.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Management</h1>
+      <nav>
+        <a href="#">Dashboard</a> / <span>Task Management</span>
+      </nav>
+    </header>
+
+    <main>
+      <div class="table-controls">
+        <div class="entries">
+          <label for="entries">Show
+            <select id="entries">
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+            </select>
+            entries
+          </label>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <table class="task-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Department</th>
+            <th>User Detail</th>
+            <th>Task Title</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>PHP Development</td>
+            <td><img src="" alt="" class="user-img"> Stanley Rouse</td>
+            <td>Make User Login Page</td>
+            <td>2024-07-17</td>
+            <td>2024-07-19</td>
+            <td><span class="status completed">Completed</span></td>
+            <td>
+              <button class="btn view-btn">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Web Design</td>
+            <td><img src="" alt="" class="user-img"> Debra Coan</td>
+            <td>Create Stylish Contact Form</td>
+            <td>2024-07-19</td>
+            <td>2024-07-19</td>
+            <td><span class="status delayed">Delayed</span></td>
+            <td>
+              <button class="btn view-btn">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>PHP Development</td>
+            <td><img src="" alt="" class="user-img"> Stanley Rouse</td>
+            <td>Make Dynamic Dependent Dropdown</td>
+            <td>2024-07-23</td>
+            <td>2024-07-24</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>
+              <button class="btn view-btn">View</button>
+              <button class="btn edit-btn">Edit</button>
+              <button class="btn delete-btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <p>Showing 1 to 3 of 3 entries</p>
+        <div class="pagination-controls">
+          <button>Previous</button>
+          <button>Next</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

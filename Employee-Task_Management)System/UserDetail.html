@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="UserDetail.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <nav>
+            <a href="#">Dashboard</a> / 
+            <a href="#">User Management</a> / 
+            <span>User Details</span>
+        </nav>
+
+        
+        <div class="details-container">
+           
+            <div class="user-details">
+                <h2>User Details</h2>
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/100" alt="User Profile">
+                    <ul>
+                        <li><strong>User ID:</strong> 1</li>
+                        <li><strong>First Name:</strong> Debra</li>
+                        <li><strong>Last Name:</strong> Coan</li>
+                        <li><strong>Department:</strong> Web Design</li>
+                        <li><strong>Email:</strong> debracoan@mailinator.com</li>
+                        <li><strong>Contact No:</strong> 7412589630</li>
+                        <li><strong>Date of Birth:</strong> 2000-05-15</li>
+                        <li><strong>Gender:</strong> Female</li>
+                        <li><strong>Address:</strong> 2834 Olen Thomas Drive Graham, TX 76046</li>
+                        <li><strong>Status:</strong> <span class="status enable">Enable</span></li>
+                        <li><strong>Added On:</strong> 2024-07-13 10:51:13</li>
+                        <li><strong>Update On:</strong> 2024-07-13 10:51:13</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="task-details">
+                <h2>Task Details</h2>
+                <div class="show">
+            
+                    <div class="b1">
+                        <p>show</p>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+        
+                        </select>
+                        <p>entries</p>
+                    </div>
+        
+                    <div class="b2">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search">
+                    </div>
+        
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Department</th>
+                            <th>Task Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Web Design</td>
+                            <td>Create Stylish Contact Form</td>
+                            <td>2024-07-19</td>
+                            <td>2024-07-19</td>
+                            <td><span class="status delayed">Delayed</span></td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="bottom">    
+                    <p>Showing  1 to 2 of Entries</p>
+                    
+                    <div class="btn-switch">
+                        <button>Previous</button>
+                        <button>1</button>
+                        <button>Next</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

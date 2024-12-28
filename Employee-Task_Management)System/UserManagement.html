@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="UserManagement.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <div class="breadcrumb">
+            <a href="#">Dashboard</a> / <span>User Management</span>
+        </div>
+        <div class="user-table">
+            <div class="header">
+                <h2>User List</h2>
+                <div class="header-actions">
+                    <input type="text" placeholder="Search..." class="search-box">
+                    <button class="add-button">Add</button>
+                </div>
+            </div>
+
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>ID</th>
+                        <th>Department</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="" alt=""></td>
+                        <td>1</td>
+                        <td>PHP Development</td>
+                        <td>Stanley</td>
+                        <td>Rouse</td>
+                        <td>stanleyrouse@mailinator.com</td>
+                        <td>8523697411</td>
+                        <td><span class="status enabled">Enable</span></td>
+                        <td>
+                            <button class="view-button">View</button>
+                            <button class="edit-button">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="" alt=""></td>
+                        <td>2</td>
+                        <td>Web Design</td>
+                        <td>Debra</td>
+                        <td>Coan</td>
+                        <td>debracoan@mailinator.com</td>
+                        <td>7412589630</td>
+                        <td><span class="status enabled">Enable</span></td>
+                        <td>
+                            <button class="view-button">View</button>
+                            <button class="edit-button">Edit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button class="page-button">Previous</button>
+                <span>1</span>
+                <button class="page-button">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

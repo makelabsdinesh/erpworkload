@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container */
+.changePassword-div {
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-left: 20vh;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading and Breadcrumb */
+.changePassword-div h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.changePassword-div p {
+    font-size: 0.9rem;
+    color: #3298db;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Error Message */
+.errorMessage {
+    display: none; /* Change to block if errors exist */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.input-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0a67a5;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-box label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.input-box input {
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.input-box select {
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box input:focus {
+    border-color: #0a67a5;
+    background: #fff;
+    outline: none;
+}
+span{
+    color: grey;
+}
+/* Button */
+.input-box button {
+    height: 50px;
+    background: #3298db;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.input-box button:hover {
+    background: #3284c2;
+}
+
+.input-box button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 103, 165, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .changePassword-div {
+        padding: 20px;
+    }
+
+    .changePassword-div h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-box h3 {
+        font-size: 1rem;
+    }
+
+    .input-box label {
+        font-size: 0.9rem;
+    }
+
+    .input-box input, 
+    .input-box button {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .changePassword-div {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .changePassword-div h1 {
+        font-size: 1.5rem;
+    }
+
+    .changePassword-div p {
+        font-size: 0.8rem;
+    }
+
+    .input-box h3 {
+        font-size: 0.9rem;
+    }
+
+    .input-box input, 
+    .input-box button {
+        font-size: 0.8rem;
+    }
+}

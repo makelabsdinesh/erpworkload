@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(240 240 240);
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.notify{
+    padding: 2vh 2vh;
+    margin: 5vh 1vh;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.notify h1{
+    font-size: 3.8vh;
+}
+.search p span svg{
+    margin-top: -0.5vh;
+    margin-right: 1vh;
+}
+.search p input{
+    border: 1px solid gainsboro;
+    border-radius: 0.8vh;
+    height: 5vh;
+    width: 40vh;
+    padding: 2vh;
+
+}
+.notify button{
+    border-radius: 1vh;
+    height: 5vh;
+    width: 10vh;
+    background-color: #3298db;
+    color: white;
+    border: 1px solid #3298db;
+    cursor: pointer;
+}
+
+.message{
+    border: 1px solid rgb(255, 255, 255);
+    width: 80%;
+    border-radius:1vh ;
+    margin-bottom: 2vh;
+    
+}
+.content{
+    display: flex;
+    padding: 1vh 1vh;
+    background-color: white;
+    text-align: left;
+    border-radius:1vh ;
+}
+.content p{
+    font-size: 2.5vh;
+    margin-right: 2vh;
+}
+#para-1{
+    padding-left: 3.5vh;
+    cursor: pointer;
+
+}
+#para-2{
+    margin-top: 0.5vh;
+    cursor: pointer;
+    
+} 
+.content p a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media(max-width:1000px){
+    .notify{
+        display: flex;
+        flex-direction: column;
+    }
+   .notify{
+    padding: 1vh;
+    width: 100%;
+   }
+   .search{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   }
+   .search svg{
+    display: none;
+   }
+}

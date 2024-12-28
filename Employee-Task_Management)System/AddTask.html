@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="AddTask.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<div class="container-full">
+    <h1>Add Task</h1>
+    <div class="breadcrumb">
+        <a href="#">Dashboard</a> / <a href="#">Task Management</a> / Add Task
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Add Task</h2>
+        </div>
+        <form>
+            
+        <div class="row">
+
+            <div class="form-group">
+                <label for="department">Department Name</label>
+                <select id="department">
+                    <option value="">Select Department</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="user">User Name</label>
+                <select id="user">
+                    <option value="">Select User</option>
+                </select>
+            </div>
+
+        </div>
+
+            <div class="form-group">
+                <label for="title">Task Title</label>
+                <input type="text" id="title" >
+            </div>
+            <div class="form-group">
+                <label for="description">Task Description</label>
+                <div class="task-comment">
+                    <label class="head" for="comment"><strong>Task Comment</strong></label>
+                    <div class="task-box">
+                        <div class="modern-editor-toolbar">
+                            <button title="Bold" onclick="formatText('bold')"><i class="fas fa-bold"></i></button>
+                            <button title="Italic" onclick="formatText('italic')"><i class="fas fa-italic"></i></button>
+                            <button title="Underline" onclick="formatText('underline')"><i class="fas fa-underline"></i></button>
+                            <select title="Font Family" onchange="changeFontFamily(this.value)">
+                                <option value="Arial">Arial</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                            </select>
+                            <select id="font-size-selector">
+                                <option value="12px">12</option>
+                                <option value="16px" selected>16</option>
+                                <option value="20px">20</option>
+                                <option value="24px">24</option>
+                                <option value="32px">32</option>
+                            </select>
+                            <div class="color-picker">
+                                <div class="color-options" id="colorOptions">
+                                    <div class="color-option" style="background-color: black;" data-color="#000000"></div>
+                                    <div class="color-option" style="background-color: gray;" data-color="#808080"></div>
+                                    <div class="color-option" style="background-color: red;" data-color="#FF0000"></div>
+                                    <div class="color-option" style="background-color: green;" data-color="#008000"></div>
+                                    <div class="color-option" style="background-color: blue;" data-color="#0000FF"></div>
+                                    <div class="color-option" style="background-color: yellow;" data-color="#FFFF00"></div>
+                                    <div class="color-option" style="background-color: orange;" data-color="#FFA500"></div>
+                                    <div class="color-option" style="background-color: purple;" data-color="#800080"></div>
+                                </div>
+                            </div>                       
+                            <button title="Align Left" onclick="formatText('justifyLeft')"><i class="fas fa-align-left"></i></button>
+                            <button title="Align Center" onclick="formatText('justifyCenter')"><i class="fas fa-align-center"></i></button>
+                            <button title="Align Right" onclick="formatText('justifyRight')"><i class="fas fa-align-right"></i></button>
+                            <button title="Bulleted List" onclick="formatText('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+                            <button title="Numbered List" onclick="formatText('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+                            <button title="Insert Link" onclick="insertLink()"><i class="fas fa-link"></i></button>
+                            <button title="Insert Image" class="img-btn" id="imageButton"><i class="fas fa-image"></i></button>
+                            <div id="contentArea" contenteditable="true" class="content-area"></div>
+                            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        </div>
+                        <div contenteditable="true" id="comment" class="editable-textarea" placeholder="Enter your comment here..."></div>
+                    </div>   
+                </div>
+                
+            </div>
+            <div class="date-inputs">
+                <div class="form-group">
+                    <label for="assign-date">Task Assign Date</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="assign-date" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="end-date">Task End Date</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="end-date" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Add Task</button>
+        </form>
+    </div>
+
+
+    </div>
+
+    <script>
+        
+    // the command 
+    function formatText(command) {
+            document.execCommand(command, false, null);
+        }
+    // font family
+        function changeFontFamily(font) {
+            document.execCommand('fontName', false, font);
+        }
+    // font size
+        const fontSizeSelector = document.getElementById('font-size-selector');
+        const textEditor = document.getElementById('comment');
+        fontSizeSelector.addEventListener('change', () => {
+            const selectedFontSize = fontSizeSelector.value;
+            textEditor.style.fontSize = selectedFontSize;
+        });
+    // font color
+    document.querySelectorAll('.color-option').forEach(option => {
+      option.addEventListener('click', function () {
+        const color = this.getAttribute('data-color');
+        document.getElementById('comment').style.color = color;
+      });
+    });
+    // hyperlink
+        function insertLink() {
+            const url = prompt("Enter the URL:");
+            if (url) {
+                document.execCommand('createLink', false, url);
+            }
+        }
+    //an image
+        // Select elements
+const imageButton = document.getElementById('imageButton');
+const imageInput = document.getElementById('imageInput');
+const contentArea = document.getElementById('contentArea');
+
+// Image button click event
+imageButton.addEventListener('click', () => {
+    imageInput.click(); // Open file input dialog
+});
+
+// Handle image file selection
+imageInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.style.maxWidth = '50px';
+
+            contentArea.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+    }
+});
+    </script>
+</body>
+</html>
